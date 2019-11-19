@@ -3,6 +3,7 @@ protected String Color;
 public void setColor(String str){
 this.Color=str;
 }
+public abstract void show();
 }
 
 class CTriangle extends Cshape{
@@ -15,11 +16,14 @@ this.c = c;
 public void show(){
     System.out.println("Color="+Color);
     System.out.println("Area="+a*b*0.5);
-}}
-
-
-public static void main(){
-    CTriangle Ctr1 =new CTriangle(3,4,5);
-    Ctr1.setColor("Red");
-    Ctr1.show();
 }
+}
+
+public class oo_1119{
+    public static void main(String args[]){
+        CTriangle Ctr1 =new CTriangle(3,4,5);
+        Ctr1.setColor("Red");
+        Ctr1.show();
+    }
+}
+
