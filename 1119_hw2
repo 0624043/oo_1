@@ -1,0 +1,18 @@
+class CTriangle extends Cshape{
+protected double a,b,c;
+public CTriangle(double a,b,c){
+this.a = a;
+this.b = b;
+this.c = c;
+}
+public void show(){
+    System.out.println("Color="+Color);
+    System.out.println("Area="+a*b*0.5);
+}
+
+}
+public static void main(){
+    CTriangle Ctr1 =new CTriangle(3,4,5);
+    Ctr1.setColor("Red");
+    Ctr1.show;
+}
